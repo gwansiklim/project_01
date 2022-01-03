@@ -1,6 +1,6 @@
+const port = 1000
 const express = require('express')
 const app = express()
-const port = 1000
 const Memo = require("./schemas/post")
 
 app.use(express.urlencoded({ extended: false }))
