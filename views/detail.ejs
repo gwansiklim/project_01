@@ -77,7 +77,7 @@
     <a class="btn btn-secondary" style="margin:auto; margin-left: 47%;" onclick="check_password()">수정하기</a>
 </body>
 <script>
-    // const mydate = new Date(<%= memo.time %>)
+    const mydate = new Date(`<%= memo.time %>`)
     const changedDate = `${mydate.getUTCFullYear()} / ${mydate.getUTCMonth() + 1} / ${mydate.getDate()}`
     $('#timeing').text(changedDate)
     function check_password() {
